@@ -1,0 +1,305 @@
+body{
+    background-color: #b4e7c0;
+    padding: 0px;
+    margin: 0;
+    position: relative;
+    box-sizing: border-box;
+    border: 0px solid white;
+}
+.post{
+    position: relative;
+    margin-left: 15vw;
+    margin-top: 10vw;
+    border-radius: 1vw;
+    background-color: aliceblue;
+    width: 70vw;
+    height: 30vw;
+    box-shadow: 0.5vw 0.05vw rgba(0,0,0,0.12);
+    box-shadow: 0.5vw 0.1vw rgba(0,0,0,0.12);
+    box-shadow: 0.5vw 0.2vw rgba(0,0,0,0.12);
+    box-shadow: 0.5vw 0.4vw rgba(0,0,0,0.12);
+}
+.header{          
+    background-color: aliceblue;
+    padding: 0 0 2vw 0;
+    position: fixed;
+    min-width: 100%;
+    top: 0;
+    height: 80px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    box-shadow: 0vw 0.05vh rgba(0,0,0,0.12);
+    box-shadow: 0vw 0.1vh rgba(0,0,0,0.12);
+    box-shadow: 0vw 0.2vw rgba(0,0,0,0.12);
+    box-shadow: 0vw 0.4vh rgba(0,0,0,0.12);
+}
+.brand{
+    position: fixed;
+    height: 10vh;
+    width: 20%;
+    margin-top: 2px;
+    /* color: #208fd8; */
+    font-size: 60px;
+    margin-left: 20px;
+    display: inline-block;
+    font-family: 'Rubik', sans-serif;
+}
+.vhod{
+    text-decoration: none;
+    margin-left: 5px;
+    box-sizing: border-box;
+    top: 9px;
+    margin-top: 11px;
+    right: 5px;
+    padding: 0.2vw;
+    position: fixed;
+    display: inline-block;
+    border: 7px solid #208fd8;
+    font-size: 20px;
+    border-radius: 15px;
+    font-family: 'Rubik', sans-serif;
+    color: black;
+}
+.registr{
+    text-decoration: none;
+    box-sizing: border-box;
+    top: 9px;
+    margin-top: 11px;
+    margin-right: 0px;
+    right: 70px;
+    padding: 0.2vw;
+    position: fixed;
+    display: inline-block;
+    border: 7px solid #208fd8;
+    font-size: 20px;
+    border-radius: 15px;
+    font-family: 'Rubik', sans-serif;
+    color: black;
+}
+.search_down{
+    display: none;
+    position: relative;
+    background-color: grey;
+    width: 100vw;
+}
+.fa-search{
+    position: fixed;
+    padding: 5px 5px 0 5px;
+    color: green;
+    border-radius: 0 1vw 1vw 0;
+    margin-left: -3px;
+    top: 24px;
+    font-size: 15px;
+    border: 5px solid #677ee1;
+    height: 21px;
+}
+.searchform{
+    top: 0px;
+    position: fixed;
+    left: 240px;
+}
+.search{
+    width: 33vw;
+    height: 24px;
+    margin-top: 24px;
+    border-radius: 1vw 0 0 1vw;
+    border: 5px solid #677ee1;
+}
+
+@media screen and (min-width: 1300px) {
+    .header{
+        height: 100px;
+    }
+    .brand{
+        font-size: 80px;
+    }  
+    .searchform{
+        left: 24vw;
+    }  
+    .search{
+        width: 54vw;
+        margin-top: 33px;
+    }
+    .vhod, .registr{
+        margin-top: 19px;
+        right: 10px;
+    }
+    .registr{
+        right: 75px;
+    } 
+    .fa-search{
+        top: 33.3px;
+    }    
+}
+@media screen and (max-width: 750px) {
+    .header{
+        height: 57px;
+    }
+    .brand{
+        font-size: 45px;
+        margin-left: 8px;
+    }  
+    .searchform{
+        left: 170px;
+    }  
+    .fa-search{
+        top: 16px;
+        padding: 4px 3px 0 2px;
+        color: green;
+        border-radius: 0 1vw 1vw 0;
+        margin-left: -4px;
+        font-size: 13px;
+        border: 5px solid #677ee1;
+        height: 17px;
+    }
+    .search{
+        width: 20vw;
+        height: 19px;
+        margin-top: 16px;
+    } 
+    .vhod, .registr{
+        top: 4px;
+        font-size: 15px;
+        border: 4px solid #208fd8;
+        border-radius: 8px;
+    }   
+    .registr{
+        right: 55px;
+    }
+}
+@media screen and (max-width: 473px) {
+    .header{
+        height: 50px;
+    }
+    .brand{
+        font-size: 40px;
+        margin-left: 8px;
+    }  
+    .searchform{
+        left: 148px;
+    } 
+    .search_down{
+        display: block;
+        top: 55px;
+        height: 35px;
+    }
+    #search_ikon{
+        display: none;
+        border: 0px solid red;
+        margin-top: 13px;
+        font-size: 30px;
+    } 
+    .fa-search{
+        border: 0px solid red;
+        margin-top: -5px;
+        font-size: 20px;
+    }
+    .search{
+        display: none;
+        width: 26vw;
+        height: 15px;
+        margin-top: 14px;
+        border: 4px solid #677ee1;
+    } 
+    .vhod, .registr{
+        top: 4px;
+        font-size: 13px;
+        border: 3px solid #208fd8;
+        border-radius: 5px;
+    }   
+    .registr{
+        right: 47px;
+    }
+    #poisk{
+        position: fixed;
+        top: 18px;
+        left: 150px;
+    }
+}
+@media screen and (max-width: 315px) {
+    .brand{
+        margin-top: 7px;
+        font-size: 30px;
+    }
+    #poisk{
+        position: fixed;
+        top: 16px;
+        left: 115px;
+        font-size: 20px;
+    }
+    .vhod, .registr{
+        top: 4px;
+        font-size: 11px;
+        border: 3px solid #208fd8;
+        border-radius: 5px;
+    } 
+    .registr{
+        right: 38px;
+    }
+    .vhod{
+        right: 3px;
+    }
+}
+@media screen and (max-width: 257px) {
+    .header{
+        height: 15vw;
+    }
+    .brand{
+        top: -1vw;
+        font-size: 9vw;
+    }
+    #poisk{
+        position: fixed;
+        top: 5vw;
+        left: 37vw;
+        font-size: 7vw;
+    }
+    .vhod, .registr{
+        top: 4vw;
+        margin-top: 0;
+        font-size: 4vw;
+        border: 1vw solid #208fd8;
+        border-radius: 5px;
+    } 
+    .registr{
+        right: 15vw;
+    }
+    .vhod{
+        right: 3px;
+    }
+}
+@media screen and (max-width: 163px) {
+    .brand{
+        top: -2.5vw;
+        font-size: 9vw;
+    }
+    #poisk{
+        position: fixed;
+        top: 5vw;
+        left: 39vw;
+        font-size: 7vw;
+    }
+    .vhod, .registr{
+        top: 4vw;
+        margin-top: 0;
+        font-size: 4vw;
+        border: 1vw solid #208fd8;
+        border-radius: 5px;
+    } 
+    .registr{
+        right: 15vw;
+    }
+    .vhod{
+        right: 3px;
+    }
+}
+@media screen and (max-width: 129px) {
+    .brand{
+        top: -3vw;
+        font-size: 9vw;
+    }
+    
+}
+
+
+
