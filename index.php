@@ -15,7 +15,7 @@
 
 </head>
 <body>
-    <p></p>
+    <p>ппп</p>
     <div class="container-fluid" id="app">
         <div class="header">
             <div class="brand">blog.ru</div>
